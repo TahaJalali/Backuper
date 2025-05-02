@@ -611,7 +611,7 @@ marzban_template() {
             db_password="${BASH_REMATCH[3]}"
             db_host="${BASH_REMATCH[4]}"
             db_port="3306"  # Default MySQL/MariaDB port
-            db_name="${BASH_REMATCH[5]}"
+            db_name="marzban"
         else
             error "Invalid SQLALCHEMY_DATABASE_URL format in $env_file."
             return 1
